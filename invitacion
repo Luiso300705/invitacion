@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a la Graduación</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7e0; /* Fondo verde claro */
+            color: #333;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #5f5f5f; /* Gris oscuro */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .header {
+            background: linear-gradient(to bottom, #4caf50, #cfd8dc); /* Verde oscuro y gris */
+            color: #fff;
+            padding: 50px 20px;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: slideIn 1s ease-out;
+        }
+        .header p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            animation: fadeIn 2s ease-in;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f0f0f0; /* Gris claro */
+        }
+        .card {
+            background: #333;
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 45%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact {
+            margin: 20px 0;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1.2em;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container img {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <!-- Navegación eliminada -->
+        </ul>
+    </div>
+    <div class="header">
+        <h1>¡Invitación a mi Graduación!</h1>
+        <p>¡Hoy culmina una etapa y comienza una nueva aventura!</p>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2>Preparatoria EMSAD 112 TOBOBAMPO</h2>
+            <p>Generación 2021-2024</p>
+            <p>Fecha: 18 de Junio de 2024</p>
+            <p>Hora: 3:00 PM</p>
+            <p>Lugar: <a href="https://maps.app.goo.gl/u2aUi1X6A4M1YHXz5" style="color: #008000;">Salón de eventos toscana</a></p>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/v7UxzBM_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="Imagen de la Generación 1">
+            <img src="https://i.imgur.com/4viXqkA_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="Imagen de la Generación 2">
+            <img src="https://i.imgur.com/wEa6olw_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="Imagen de la Generación 3">
+            <img src="https://i.imgur.com/USYcvN3_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="Imagen de la Generación 4">
+        </div>
+        <div class="contact">
+            <p>Contacto: <a href="https://wa.me/qr/E56YREEPTUUGG1" style="color: #008000;">WhatsApp</a></p>
+        </div>
+    </div>
+</body>
+</html>
